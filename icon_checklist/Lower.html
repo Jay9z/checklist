@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="static/breaker.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+<table class="lower_panel">
+  <tr>
+    <th colspan="4">MAIN BATT DIR</th>
+    <th colspan="8">LEFT DC ESS</th>
+    <th colspan="8">LEFT DC</th>
+  </tr>
+  <tr>
+    <td id="r1-1" class="breaker60_up cell">MAIN-BATTCHRGOUT</td>
+    <td id="r1-2" class="breaker50_up cell">CPR-CAB1-CHC</td>
+    <td id="r1-3" class="breaker35_up cell">PCM3-INPB</td>
+    <td id="r1-4" class="breaker35_up cell">PCM4-INPB</td>
+    <td class="cell"></td>
+    <td class="breaker70_up cell">INV-INPUT</td>
+    <td class="cell"></td>
+    <td class="breaker50_up cell">CPR-CAB1-CHB</td>
+    <td class="breaker50_up cell">RPDU11-LRM7</td>
+    <td class="breaker35_up cell">PCM1-INPA</td>
+    <td class="breaker35_up cell">LICBP-LDCESS-POUT</td>
+    <td class="cell"></td>
+    <td class="breaker35_up cell">RPDU81-LRM3</td>
+    <td class="breaker35_up cell">RPDU21-LRM4</td>
+    <td class="breaker50_up cell">RPDU51-LRM6</td>
+    <td class="breaker50_up cell">RPDU25-LRM4</td>
+    <td class="breaker50_up cell">RPDU25-LRM3</td>
+    <td class="breaker50_up cell">RPDU21-LRM3</td>
+    <td class="breaker50_up cell">CPR-CAB2-CHA</td>
+    <td class="breaker50_up cell">LDP-DC-GND-SVC-BUS</td>
+  </tr>
+</table>
+
+<button id="create" onclick="save()">Save Result</button>
+<a download="info.txt" id="downloadlink" style="display: none">Download</a>
+    <script src="static/breaker.js"></script>
+    <script src="static/saveit.js"></script>
+    <script>
+    function save()
+    { var text="";
+      $("td").each(function(){
+        innerText = $(this).text();
+        if(innerText.length>1)
+        {
+        text += innerText;
+        text +=": ";
+        text += $(this).attr("class");
+        text +="\r";
+        }
+      });
+
+      //alert(text);
+      saveTextAsFile(text,'lower_log');
+    }
+    </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,179 @@
+table
+{
+border:1px solid #000;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+
+.cell
+{
+	background-position: center;
+	background-size:  4em 4em;
+	background-repeat: no-repeat;
+}
+
+td
+{
+	height:10em;
+	width:10em;
+	border-style: none;
+	text-align: center;
+	font-size:0.75em;
+	vertical-align: bottom;
+}
+
+td[class="text_2td"]
+{
+	border-style: none;
+	text-align: center;
+	font-size:1em ;
+	font-weight:bold;
+	vertical-align: middle;
+	color:#000;
+}
+
+tr
+{
+border:1px solid #f00;
+}
+
+th
+{
+	height:3em;
+	border-style: none;
+	text-align: center;
+	font-size:2em;
+	vertical-align: bottom;
+}
+
+
+.panel_row td
+{
+	height:10em;
+	width:16em;
+	border-style: none;
+	text-align: center;
+}
+
+.panel_left td
+{
+	height:5em;
+	width:8em;
+	border-style: none;
+	text-align: center;
+}
+
+.panel_middle td
+{
+	height:10em;
+	width:16em;
+	border-style: none;
+	text-align: center;
+}
+
+.panel_right td
+{
+	height:10em;
+	width:16em;
+	border-style: none;
+	text-align: center;
+}
+
+.panel_left
+{
+width:9%;
+height:80em;
+
+
+float:left;
+
+}
+.panel_middle
+{
+width:32%;
+height: 80em;
+
+float:left;
+}
+.panel_middle + .panel_middle
+{
+width:45%;
+height: 80em;
+
+float:left;
+}
+
+
+
+.panel_right
+{
+width:9%;
+height: 80em;
+float:left;
+}
+
+.breaker1_up
+{
+background-image: url("icon_edp/breaker_1_up.jpg");
+}
+.breaker1_down
+{
+background-image: url("icon_edp/breaker_1_down.jpg");
+}
+.breaker2_up
+{
+background-image: url("icon_edp/breaker_2_up.jpg");
+}
+
+.breaker2_down
+{
+background-image: url("icon_edp/breaker_2_down.jpg");
+}
+.breaker3_up
+{
+background-image: url("icon_edp/breaker_3_up.jpg");
+}
+
+.breaker3_down
+{
+background-image: url("icon_edp/breaker_3_down.jpg");
+}
+.breaker4_up
+{
+background-image: url("icon_edp/breaker_4_up.jpg");
+}
+
+.breaker4_down
+{
+background-image: url("icon_edp/breaker_4_down.jpg");
+}
+
+
+.breaker5_up
+{
+background-image: url("icon_edp/breaker_5_up.jpg");
+}
+.breaker5_down
+{
+background-image: url("icon_edp/breaker_5_down.jpg");
+}
+
+
+.breaker6_up
+{
+background-image: url("icon_edp/breaker_6_up.jpg");
+}
+.breaker6_down
+{
+background-image: url("icon_edp/breaker_6_down.jpg");
+}
+
+.breaker7_up
+{
+background-image: url("icon_edp/breaker_7_up.jpg");
+}
+.breaker7_down
+{
+background-image: url("icon_edp/breaker_7_down.jpg");
+}
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>right distribution panel</title>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="static/breaker_rdp.css">
+
+  </head>
+  <body>
+
+
+<div style="display:table">
+<div style="display:table-row">
+<div style="display:table-cell">
+<table class="panel_row">
+	<tr>
+<th colspan=7 id="th-1">RIGHT AC FIXED BUS</th>
+
+	</tr>
+  <tr>
+    <td id="rdp-a-1" class="breaker1_up cell" >RDP-AC-ESS-TIEBUS</td>
+    <td id="rdp-a-2" class="breaker1_up cell" >G1-GALLEY</td>
+    <td id="rdp-a-3" class="breaker1_up cell" >HYD-EMP1B</td>
+    <td id="rdp-a-4" class="breaker2_up cell" >R-ETRAS</td>
+    <td id="rdp-a-5" class="breaker2_up cell" >G5-GALLEY-R</td>
+    <td id="rdp-a-6" class="breaker2_up cell" >RTRU-PWR</td>
+    <td id="rdp-a-7" class="breaker2_up cell" >MCU2-LUX</td>
+  </tr>
+</table>
+</div>
+</div>
+
+<div style="display:table-row">
+<div style="display:table-cell">
+<table class="panel_row">
+	<tr>
+	<th colspan="8">RIGHT AC BUS</th>
+	</tr>
+  <tr>
+    <td id="RDP-B-1" class="breaker3_up cell">R-CTR-AC-PUMP</td>
+    <td id="RDP-B-2" class="breaker3_up cell">VFMD-VAC</td>
+    <td id="RDP-B-3" class="breaker3_up cell">RPDU22-LRM7</td>
+    <td id="RDP-B-4" class="breaker3_up cell">RPDU24-LRM7</td>
+    <td id="RDP-B-5" class="breaker3_up cell">RPDU26-LRM7</td>
+    <td id="RDP-B-6" class="breaker3_up cell">RPDU82-LRM6</td>
+    <td id="RDP-B-7" class="breaker3_up cell">RPDU82-LRM8</td>
+    <td id="RDP-B-8" class="breaker3_up cell">R-AC-SENSE-RLY</td>
+  </tr>
+   <tr>
+    <td id="RDP-C-1" class="breaker3_up cell">WHC-RH</td>
+    <td id="RDP-C-2" class="breaker3_up cell">RPDU12-LRM10</td>
+    <td id="RDP-C-3" class="breaker3_up cell">RPDU22-LRM8</td>
+    <td id="RDP-C-4" class="breaker3_up cell">RPDU24-LRM8</td>
+    <td id="RDP-C-5" class="breaker3_up cell">RPDU26-LRM8</td>
+    <td id="RDP-C-6" class="breaker3_up cell">RPDU82-LRM7</td>
+    <td id="RDP-C-7" class="breaker3_up cell">APU-BATTCHRG-IN</td>
+    <td class=" cell"></td>
+  </tr>
+ <tr>
+    <td id="RDP-D-1" class="breaker3_up cell">RFAN2-PWR</Td>
+    <td id="RDP-D-2" class="breaker3_up cell">RPDU22-LRM6</td>
+    <td id="RDP-D-3" class="breaker3_up cell">RPDU24-LRM6</td>
+    <td id="RDP-D-4" class="breaker3_up cell">RPDU26-LRM6</td>
+    <td id="RDP-D-5" class="breaker3_up cell">RPDU52-LRM8</td>
+    <td id="RDP-D-6" class="breaker3_up cell">ROPU-POR</td>
+    <td id="RDP-D-7" class="breaker3_up cell">RGCU-POR</td>
+    <td class=" cell"></td>
+  </tr>
+
+</table>
+</div>
+</div>
+
+
+<div style="display:table-row">
+
+<table class="panel_left">
+  <tr>
+    <th colspan="5">RIGHT DC BUS</th>
+
+  </tr>
+  <tr>
+    <td id="RDP-E-1" class="breaker3_up cell">RAT-STOW-PNL</td>
+    <td id="RDP-E-2" class="breaker3_up cell">RPDU25-DCB1</td>
+    <td id="RDP-E-3" class="breaker3_up cell">RPDU21-DCB1</td>
+    <td id="RDP-E-4" class="breaker3_up cell">RPDU52-LRM7</td>
+    <td id="RDP-E-5" class="breaker3_up cell">RPDU22-RLM4</td>
+     </tr>
+  <tr>
+    <td id="RDP-F-1" class="breaker3_up cell">EF6-SENSE</Td>
+    <td id="RDP-F-2" class="breaker3_up cell">RPDU26-DCA1</td>
+    <td id="RDP-F-3" class="breaker3_up cell">RPDU22-DCA1</td>
+    <td id="RDP-F-4" class="breaker3_up cell">RPDU82-LRM3</td>
+    <td id="RDP-F-5" class="breaker3_up cell">RPDU22-LRM5</td>
+  </tr>
+  <tr>
+    <td  class="cell"></td>
+    <td id="RDP-G-2" class="breaker3_up cell">RPDU81-DCB1</td>
+    <td id="RDP-G-3" class="breaker3_up cell">RPDU23-DCB1</td>
+    <td id="RDP-G-4" class="breaker3_up cell">RPDU82-LRM4</td>
+    <td id="RDP-G-5" class="breaker3_up cell">RPDU24-LRM4</td>
+  </tr>  <tr>
+    <td class="cell"></td>
+    <td id="RDP-H-2" class="breaker3_up cell">RPDU82-DCA1</td>
+    <td id="RDP-H-3" class="breaker3_up cell">RPDU24-DCA1</td>
+    <td id="RDP-H-4" class="breaker3_up cell">RPDU12-DCA2</td>
+    <td id="RDP-H-5" class="breaker3_up cell">RPDU26-LRM4</td>
+  </tr>
+</table>
+<table class="panel_middle">
+  <tr>
+    <th colspan="6">RIGHT DC ESS BUS</th>
+
+  </tr>
+  <tr>
+	  <td class="cell"></td>
+  </tr>
+  <tr>
+    <td id="RDP-J-6" class="breaker3_up cell">RDP-CAN-LRM</td>
+    <td id="RDP-J-7" class="breaker3_up cell">RGCU-PS</td>
+    <td id="RDP-J-8" class="breaker3_up cell">RSW4-CHA</td>
+    <td id="RDP-J-9" class="breaker3_up cell">RAT-MNL-SW</td>
+    <td id="RDP-J-10" class="breaker3_up cell">RPDU12-DCB1</td>
+    <td id="RDP-J-11" class="breaker3_up cell">RPDU12-LRM6</td>
+     </tr>
+  <tr>
+    <td  class="breaker3_up cell"></td>
+    <td id="RDP-K-7" class="breaker3_up cell">SPARE-RDP-DC-1</td>
+    <td id="RDP-K-8" class="breaker3_up cell">TRV-RELAY</td>
+    <td id="RDP-K-9" class="breaker3_up cell">LBPCU-PS-RDCESS</td>
+    <td id="RDP-K-10" class="breaker3_up cell">RPDU52-DCA1</td>
+    <td id="RDP-K-11" class="breaker3_up cell">RICBP-RDCESS-POUT</td>
+  </tr>
+  <tr>
+    <td class="cell"></td>
+    <td id="RDP-H-7" class="breaker3_up cell">EDP-EMPC-B-LRM</td>
+    <td id="RDP-H-8" class="breaker3_up cell">R-ENG-FUEL-SOV</td>
+    <td id="RDP-H-9" class="breaker3_up cell">RBPCU-PS-RDCESS</td>
+    <td id="RDP-H-10" class="breaker3_up cell">RPDU52-DCB1</td>
+    <td id="RDP-H-11" class="breaker3_up cell">RPDU12-DCA1</td>
+  </tr>
+</table>
+<table class="panel_right">
+  <tr>
+    <th colspan="3">APU BATT BUS</th>
+
+  </tr>
+  <tr>
+    <td class=" cell"></td>
+     </tr>
+  <tr>
+    <td  class="cell"></td>
+  </tr>
+    <tr>
+    <td  class="cell"></td>
+  </tr>
+  <tr>
+    <td id="RDP-H-12" class="breaker3_up cell">RETR-CB2</td>
+    <td id="RDP-H-13" class="breaker3_up cell">RETR-CB1</td>
+    <td id="RDP-H-14" class="breaker3_up cell">APU-BATT-SW</td>
+  </tr>
+</table>
+</div>
+<div style="display:table-row">
+
+<table class="panel_left">
+  <tr>
+    <th colspan="6">RIGHT DC FIXED BUS</th>
+
+  </tr>
+  <tr>
+    <td id="RDP-L-1" class="breaker4_up cell">RPDU52-LRM6</td>
+    <td id="RDP-L-2" class="breaker4_up cell">RPDU26-LRM3</td>
+    <td id="RDP-L-3" class="breaker4_up cell">RPDU52-LRM5</td>
+    <td id="RDP-L-4" class="breaker4_up cell">RPDU24-LRM3</td>
+    <td id="RDP-L-5" class="breaker4_up cell">RPDU22-LRM3</td>
+    <td id="RDP-L-6" class="breaker4_up cell">CPR-CAB2-CHB</td>
+     </tr>
+</table>
+<table class="panel_middle">
+  <tr>
+    <th colspan="6">RIGHT DC ESS BUS</th>
+  </tr>
+  <tr>
+    <td id="RDP-L-7" class="breaker4_up cell">RPDU52-LRM4</td>
+    <td id="RDP-L-8" class="breaker4_up cell">RPDU52-LRM3</td>
+    <td id="RDP-L-9" class="breaker4_up cell">RPDU12-LRM7</td>
+    <td id="RDP-L-10" class="breaker4_up cell">RPDU12-LRM5</td>
+    <td id="RDP-L-11" class="breaker4_up cell">PCM4-INPA</td>
+    <td id="RDP-L-12" class="breaker4_up cell">PCM4-INPA</td>
+    <td id="RDP-L-13" class="breaker4_up cell">RPDU12-LRM8</td>
+  </tr>
+</table>
+
+<table class="panel_right">
+  <tr>
+    <th colspan="5">APU BATT DIRECT BUS</th>
+  </tr>
+  <tr>
+    <td id="" class="cell"></td>
+    <td id="RDP-L-14" class="breaker4_up cell">APU-BATTCHRG-OUT</td>
+    <td id="RDP-L-15" class="breaker4_up cell">CPR-CABINET2-CHC</td>
+    <td id="RDP-L-16" class="breaker4_up cell">RBPCU-BATT-PWR</td>
+    <td class="cell"></td>
+  </tr>
+</table>
+
+</div>
+</div>
+
+<button id="create" onclick="save()">Save Result</button>
+<a download="info.txt" id="downloadlink" style="display: none">Download</a>
+    <script src="static/breaker.js"></script>
+    <script src="static/saveit.js"></script>
+    <script>
+    function save()
+    { var text="";
+      $("td").each(function(){
+        innerText = $(this).text();
+        if(innerText.length>1)
+        {
+	text += $(this).attr("id");
+	text +="\t";
+        text += innerText;
+        text +="\t";
+        text += breaker_status($(this).attr("class"));
+        text +="\r";
+        }
+      });
+
+      //alert(text);
+      saveTextAsFile(text,'left_distribution_panel_log');
+    }
+    </script>
+  </body>
+</html>

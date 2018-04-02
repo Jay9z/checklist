@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="static/breaker.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<table class="upper_panel">
+	<tr>
+		<th colspan=2 id="th-1">EPS AC LOADS</th>
+		<th colspan=5 id="th-2">LEFT ACC</th>
+	</tr>
+  <tr>
+    <td id="r1-1" class="breaker60_up cell" >LDP-AC-GND-SVC-BUS</td>
+    <td id="r1-2" class="breaker50_up cell" >LTRU-PWR</td>
+    <td id="r1-3" class="breaker90_up cell" >LDP-AC-ESS-TIEBUS</td>
+    <td id="r1-4" class="breaker50_up cell" >G5-GALLEY-L2</td>
+    <td id="r1-5" class="breaker50_up cell" >G5-GALLEY-L1</td>
+    <td id="r1-6" class="breaker60_up cell" >L-ETRAS</td>
+    <td id="r1-7" class="breaker80_up cell" >HYD-EMP3B</td>
+  </tr>
+</table>
+<button id="create" onclick="save()">Save Result</button>
+<a download="info.txt" id="downloadlink" style="display: none">Download</a>
+    <script src="static/breaker.js"></script>
+    <script src="static/saveit.js"></script>
+    <script>
+    function save()
+    { var text="";
+      $("td").each(function(){
+        innerText = $(this).text();
+        if(innerText.length>1)
+        {
+        text += innerText;
+        text +=": ";
+        text += $(this).attr("class");
+        text +="\r";
+        }
+      });
+
+      //alert(text);
+      saveTextAsFile(text,'upper_log');
+    }
+    </script>
+  </body>
+</html>

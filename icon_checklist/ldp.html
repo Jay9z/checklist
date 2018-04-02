@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>left distribution panel</title>
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="static/breaker_ldp.css">
+
+  </head>
+  <body>
+
+
+<div style="display:table">
+<div style="display:table-row">
+<div style="display:table-cell">
+<table class="upper_panel">
+	<tr>
+		<th colspan=2 id="th-1">EPS AC LOADS</th>
+		<th colspan=5 id="th-2">LEFT ACC</th>
+	</tr>
+  <tr>
+    <td id="LDP-A-1" class="breaker60_up cell" >LDP-AC-GND-SVC-BUS</td>
+    <td id="LDP-A-2" class="breaker50_up cell" >LTRU-PWR</td>
+    <td id="LDP-A-3" class="breaker90_up cell" >LDP-AC-ESS-TIEBUS</td>
+    <td id="LDP-A-4" class="breaker50_up cell" >G5-GALLEY-L2</td>
+    <td id="LDP-A-5" class="breaker50_up cell" >G5-GALLEY-L1</td>
+    <td id="LDP-A-6" class="breaker60_up cell" >L-ETRAS</td>
+    <td id="LDP-A-7" class="breaker80_up cell" >HYD-EMP3B</td>
+  </tr>
+</table>
+</div>
+</div>
+<div style="display:table-row">
+<div style="display:table-cell">
+<table class="front_a_panel">
+	<tr>
+	<th colspan="4">LEFT AC GND SVC</th>
+	<th colspan="4">EPS AC LOADS</th>
+	</tr>
+  <tr><td id="LDP-B-1" class="breaker25_up cell">AFT-CARGO-PDU</td>
+    <td id="LDP-B-2" class="breaker25_up cell">FWD-CARGO-PDU</td>
+    <td id="LDP-B-3" class="breaker25_up cell">RPDU11-LRM10</td>
+    <td id="LDP-B-4" class="breaker25_up cell">RPDU51-LRM8</td>
+    <td id="LDP-B-5" class="breaker3_up cell">EPTRU-PWR</td>
+    <td id="LDP-B-6" class="breaker3_up cell">L-AC-SENSE-RLY</td>
+    <td id="LDP-6-7" class="breaker3_up cell">LOPU-POR</td>
+    <td id="LDP-6-8" class="breaker3_up cell">LGCU-POR</td>
+  </tr>
+ 	<tr>
+	<th colspan="8">LEFT AC</th>
+	</tr>
+  <tr>
+    <td id="LDP-C-1" class="breaker10_up cell">MAIN-BATTCHRG-IN</td>
+    <td id="LDP-C-2" class="breaker20_up cell">RPDU81-LRM8</td>
+    <TD id="LDP-C-3" CLASS="breaker20_up cell">RPDU81-LRM7</td>
+    <td id="LDP-C-4" class="breaker25_up cell">RPDU81-LRM6</td>
+    <td id="LDP-C-5" class="breaker20_up cell">RPDU25-LRM8</td>
+    <td id="LDP-C-6" class="breaker25_up cell">RPDU25-LRM7</td>
+    <td id="LDP-C-7" class="breaker25_up cell">RPDU25-LRM6</td>
+    <td id="LDP-C-8" class="breaker20_up cell">RPDU23-LRM8</td>
+  </tr>
+  <tr><td id="LDP-D-1" class="breaker20_up cell">RPDU23-LRM7</td>
+    <td id="LDP-D-2" class="breaker25_up cell">RPDU23-LRM6</td>
+    <td id="LDP-D-3" class="breaker25_up cell">RPDU21-LRM8</td>
+    <td id="LDP-D-4" class="breaker20_up cell">RPDU21-LRM7</td>
+    <td id="LDP-D-5" class="breaker20_up cell">RFAN1-PWR</td>
+    <td id="LDP-D-6" class="breaker25_up cell">WHC-LH</TD>
+    <td id="LDP-D-7" class="breaker25_up cell">MCU1-LUX</td>
+    <td id="LDP-D-8" class="breaker25_up cell">L-CTR-AC-PUMP</td>
+  </tr>
+</table>
+</div>
+</div>
+<div style="display:table-row">
+<div style="display:table-cell">
+<table class="front_b_panel">
+ <tr>
+   <th colspan="12">MAIN BATT DIR</th>
+ </tr>
+    <tr><td id="LDP-E-1" class="breaker10_up cell">FUEL-LRMINPC</td>
+      <td id="LDP-E-2" class="breaker10_up cell">RPDU11-MAINT</td>
+      <td id="LDP-E-3" class="breaker10_up cell">RPDU12-MAINT</td>
+      <td id="LDP-E-4" class="breaker10_up cell">LBPCU-PS-MAInt</td>
+      <td id="LDP-E-5" class="breaker5_up cell">HYD-FWSOV1</td>
+      <td id="LDP-E-6" class="breaker3_up cell">IRU3-INPB</td>
+      <td id="LDP-E-7" class="breaker3_up cell">IRU-RELAY</td>
+      <td class="cell"> </td>
+      <td class="cell"> </td>
+      <td class="cell"> </td>
+      <td class="cell"> </td>
+      <td class="cell"> </td>
+    </tr>
+    <tr><td id="LDP-F-1" class="breaker15_up cell">ECU-INPUTA</td>
+      <td id="LDP-F-2" class="breaker10_up cell">FCP-CHA</td>
+      <td id="LDP-F-3" class="breaker5_up cell">HYD-FWS0V2</td>
+      <td id="LDP-F-4" class="breaker10_up cell">LBPCU-BATT-PWR</td>
+      <td id="LDP-F-5" class="breaker3_up cell">APU-FUEL-SOV</td>
+      <td id="LDP-F-6" class="breaker3_up cell">IRU1-INPB</td>
+      <td id="LDP-F-7" class="breaker3_up cell">IRU2-INPB</td>
+      <td id="LDP-F-8" class="breaker75_up cell">EDP-EMPC C-BATT</td>
+
+  </tr>
+  <tr>
+   <th colspan="9" >LEFT DC ESS</th>
+   <th colspan="3">EPS DC ESS LOADS</th>
+  </tr>
+
+<tr>
+    <td class=" cell"></td>
+    <td id="LDP-G-2" class="breaker25_up cell">RPDU51-LRM4</td>
+    <td id="LDP-G-3" class="breaker20_up cell">DC-APU-PUMP</td>
+    <td id="LDP-G-4" class="breaker10_up cell">RPDU51-DCB1</td>
+    <td id="LDP-G-5" class="breaker5_up cell">RSW3-CHA</td>
+    <td id="LDP-G-6" class="breaker3_up cell">RDIU11-CHA</td>
+    <td id="LDP-G-7" class="breaker3_up cell">RDIU13-CHA</td>
+    <td id="LDP-G-8" class="breaker3_up cell">RDIU15-CHA</td>
+    <td class="cell"></td>
+    <td id="LDP-G-9" class="breaker3_up cell">LETR-CB1</td>
+    <td id="LDP-G-10" class="breaker3_up cell">LETR-CB2</td>
+
+
+</tr>
+<tr><td class=" cell"></td>
+  <td id="LDP-H-2" class="breaker25_up cell">RPDU11-LRM8</td>
+  <td id="LDP-H-3" class="breaker25_up cell">RPDU51-LRM3</td>
+  <td id="LDP-H-4" class="breaker10_up cell">RPDU51-DCA1</td>
+  <td id="LDP-H-5" class="breaker10_up cell">LBPCU-PS-LDCESS</td>
+  <td id="LDP-H-6" class="breaker10_up cell">RBPCU-PS-LDCESS</td>
+  <td id="LDP-H-7" class="breaker75_up cell">LGCU-PS</td>
+  <td id="LDP-H-8" Class="breaker3_up cell">SPARE-LDP-DC-1</td>
+  <td class="cell"></td>
+  <td id="LDP-H-9" class="breaker3_up cell">LDP-CAN-LRM</td>
+  <td id="LDP-H-10" class="breaker3_up cell">MAIN-BATT-SW</td>
+
+
+</tr>
+<tr><td class=" cell"></td>
+  <td id="LDP-J-2" class="breaker25_up cell">RPDU11-LRM5</td>
+  <td id="LDP-J-3" class="breaker25_up cell">RPDU11-LRM6</td>
+  <td id="LDP-J-4" class="breaker10_up cell">RPDU11-DCA1</td>
+  <td id="LDP-J-5" class="breaker10_up cell">RPDU11-DCB1</td>
+  <td id="LDP-J-6" class="breaker5_up cell">FLAP-CHAN1-SOVS</td>
+  <td id="LDP-J-7" class="breaker3_up cell">FSECU1</td>
+  <td id="LDP-J-8" class="breaker3_up cell">L-ENG-FUEL-SOV</td>
+  <td class="cell"></td>
+  <td id="LDP-J-9" class="breaker3_up cell">EF1-SENSE</td>
+</tr>
+</table>
+
+<table class="front_c_panel">
+ <tr>
+   <th id="tr_c1" colspan="6">LEFT DC</th>
+ </tr>
+  <tr>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+  </tr>
+    <tr>
+      <td id="LDP-F-11" class="breaker10_up cell">RPDU82-DCB1</td>
+      <td id="LDP-F-12" class="breaker10_up cell">RPDU81-DCA1</td>
+      <td id="LDP-F-13" class="breaker10_up cell">RPDU26-DCB1</td>
+      <td id="LDP-F-14" class="breaker25_up cell">RPDU81-LRM4</td>
+      <td id="LDP-F-15" class="breaker25_up cell">RPDU25-LRM5</td>
+  </tr>
+    <tr>
+    <td id="LDP-G-11" class="breaker3_up cell">DCGSTC-COIL</td>
+    <td id="LDP-G-12" class="breaker10_up cell">RPDU25-DCA1</td>
+    <td id="LDP-G-13" class="breaker10_up cell">RPDU24-DCB1</td>
+    <td id="LDP-G-14" class="breaker10_up cell">RPDU23-DCA1</td>
+    <td id="LDP-G-15" class="breaker25_up cell">RPDU23-LRM5</td>
+    <td id="LDP-G-16" class="breaker25_up cell">RPDU23-LRM4</td>
+    </tr>
+<tr>
+  <td id="LDP-H-11" class="breaker10_up cell">RPDU22-DCB1</td>
+  <td id="LDP-H-12" class="breaker10_up cell">RPDU21-DCA1</td>
+  <td id="LDP-H-13" class="breaker25_up cell">RPDU11-DCA2</td>
+  <td id="LDP-H-14" class="breaker25_up cell">GND-COOL-FAN</td>
+  <td id="LDP-H-15" class="breaker25_up cell">RPDU23-LRM3</td>
+  <td id="LDP-H-16" class="breaker25_up cell">RPDU21-LRM5</td>
+</tr>
+<tr>
+   <th colspan="6">LEFT DC GND SVC</th>
+</tr>
+<tr>
+  <td id="LDP-J-11" class="breaker10_up cell">RPDU11-DCB2</td>
+  <td id="LDP-J-12" class="breaker10_up cell">RPDU51-DCB2</td>
+  <td id="LDP-J-13" class="breaker25_up cell">RPDU11-LRM9</td>
+  <td id="LDP-J-14" class="breaker25_up cell">RPDU51-LRM5</td>
+  <td id="LDP-J-15" class="breaker25_up cell"></td>
+  <td id="LDP-J-16" class="breaker25_up cell"></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div style="display:table-row">
+<div style="display:table-cell">
+
+<table class="lower_panel">
+  <tr>
+    <th colspan="4">MAIN BATT DIR</th>
+    <th colspan="8">LEFT DC ESS</th>
+    <th colspan="8">LEFT DC</th>
+  </tr>
+  <tr>
+    <td id="LDP-K-1" class="breaker60_up cell">MAIN-BATTCHRGOUT</td>
+    <td id="LDP-K-2" class="breaker50_up cell">CPR-CAB1-CHC</td>
+    <td id="LDP-K-3" class="breaker35_up cell">PCM3-INPB</td>
+    <td id="LDP-K-4" class="breaker35_up cell">PCM4-INPB</td>
+    <td class="cell"></td>
+    <td id="LDP-K-5" class="breaker70_up cell">INV-INPUT</td>
+    <td class="cell"></td>
+    <td id="LDP-K-6" class="breaker50_up cell">CPR-CAB1-CHB</td>
+    <td id="LDP-K-7" class="breaker50_up cell">RPDU11-LRM7</td>
+    <td id="LDP-K-8" class="breaker35_up cell">PCM1-INPA</td>
+    <td id="LDP-K-9" class="breaker35_up cell">LICBP-LDCESS-POUT</td>
+    <td class="cell"></td>
+    <td id="LDP-K-10" class="breaker35_up cell">RPDU81-LRM3</td>
+    <td id="LDP-K-11" class="breaker35_up cell">RPDU21-LRM4</td>
+    <td id="LDP-K-12" class="breaker50_up cell">RPDU51-LRM6</td>
+    <td id="LDP-K-13" class="breaker50_up cell">RPDU25-LRM4</td>
+    <td id="LDP-K-14" class="breaker50_up cell">RPDU25-LRM3</td>
+    <td id="LDP-K-15" class="breaker50_up cell">RPDU21-LRM3</td>
+    <td id="LDP-K-16" class="breaker50_up cell">CPR-CAB2-CHA</td>
+    <td id="LDP-K-17" class="breaker50_up cell">LDP-DC-GND-SVC-BUS</td>
+  </tr>
+
+</table>
+</div>
+</div>
+</div>
+
+<button id="create" onclick="save()">Save Result</button>
+<a download="info.txt" id="downloadlink" style="display: none">Download</a>
+    <script src="static/breaker.js"></script>
+    <script src="static/saveit.js"></script>
+    <script>
+    function save()
+    { var text="";
+      $("td").each(function(){
+        innerText = $(this).text();
+        if(innerText.length>1)
+        {
+	text += $(this).attr("id");
+	text +="\t";
+        text += innerText;
+        text +="\t";
+        text += breaker_status($(this).attr("class"));
+        text +="\r";
+        }
+      });
+
+      //alert(text);
+      saveTextAsFile(text,'left_distribution_panel_log');
+    }
+    </script>
+  </body>
+</html>
