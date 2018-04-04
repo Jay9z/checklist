@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>left distribution panel</title>
+    <title>Task of LDP </title>
     <script src="static/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="static/breaker_ldp.css">
 
@@ -10,7 +10,7 @@
   <body>
 
 
-<div style="display:table" class="check_mode">
+<div style="display:table">
 <div style="display:table-row">
 <div style="display:table-cell">
 <table class="upper_panel">
@@ -232,30 +232,7 @@
 </div>
 </div>
 </div>
-
-<button id="create" onclick="save()">Save Result</button>
-<a download="info.log" id="downloadlink" style="display: none">Download</a>
-    <script src="static/breaker.js"></script>
-    <script src="static/saveit.js"></script>
-    <script>
-    function save()
-    { var text="";
-      $("td").each(function(){
-        innerText = $(this).text();
-        if(innerText.length>1)
-        {
-	text += $(this).attr("id");
-	text +="\t";
-        text += innerText;
-        text +="\t";
-        text += breaker_status($(this).attr("class"));
-        text +="\r\n";
-        }
-      });
-
-      //alert(text);
-      saveTextAsFile(text,'left_distribution_panel.log');
-    }
-    </script>
+<input  type="file"  onchange="updateDisplay(event)"  >请选择任务文件</input>
+<script src="static/load_task.js"></script>
   </body>
 </html>

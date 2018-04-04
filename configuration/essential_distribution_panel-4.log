@@ -1,0 +1,37 @@
+EDP-J-1	PCM1-INPB	breaker1_up
+EDP-K-1	PCM2-INPB	breaker1_up
+EDP-L-1	FCBR-RLY-COIL	breaker2_up
+EDP-M-1	FC-BATT-CHG	breaker3_up
+EDP-N-1	CPR-CAB1-CHA	breaker3_up
+EDP-P-1	PCM3-INPA	breaker3_up
+EDP-Q-1	LICBP-DCESS-TRANS	breaker3_up
+EDP-R-1	RICBP-DCESS-TRANS	breaker3_up
+EDP-A-1	RAT-MAN DPLY SOL	breaker3_up
+EDP-A-2	EDP EMPC A-LRM	breaker3_up
+EDP-A-3	RICBP CBS	breaker3_up
+EDP-A-4	LICBP CBS	breaker3_up
+EDP-B-1	SPARE-EDP-DC-1	breaker3_up
+EDP-B-2	EDP-CAN LRM	breaker3_up
+EDP-B-3	CCD1 IMPB	breaker3_up
+EDP-B-4	ADHC2	breaker3_up
+EDP-C-1	RDIU2 CHA	breaker3_up
+EDP-C-2	MKB1 INPB	breaker3_up
+EDP-D-1	EDP EF2 SENSE	breaker3_up
+EDP-D-2	EDP EF1 SENSE	breaker3_up
+EDP-E-1	RA1	breaker3_up
+EDP-E-2	WASH-LT ESS-L	breaker3_up
+EDP-E-3	L-HF XCVR	breaker3_up
+EDP-E-4	WAHS-LT ESS-R	breaker3_up
+EDP-F-1	EDP-AC ESS 1PHAC	breaker3_up
+EDP-F-2	AC1ER RLY-COIL	breaker3_up
+EDP-F-3	L-PILOT STATIC	breaker3_up
+EDP-G-1	AOA LEFT1	breaker3_up
+EDP-G-2	R-PILOT STATIC	breaker3_up
+EDP-G-5	RAT-POR	breaker3_up
+EDP-H-2	FWDBFAN2 PWR	breaker3_up
+EDP-H-5	LICBP-1PAC-POUT	breaker3_up
+EDP-S-1	HYD-EMP3A	breaker5_up
+EDP-T-1	ETRU-PWR	breaker6_up
+EDP-U-1	RICBP-ACESS-POUT	breaker7_up
+EDP-V-1	L-FWD-AC-PUMP	breaker7_up
+EDP-W-1	MCE-L	breaker7_up

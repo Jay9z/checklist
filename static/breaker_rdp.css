@@ -7,6 +7,13 @@ text-align: center;
 vertical-align: bottom;
 }
 
+.check_mode table
+{
+border:1px dashed #000;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+
 .cell
 {
 	background-position: center;
